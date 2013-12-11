@@ -14,7 +14,7 @@ def get_region():
 def new_bucket(bucket_name, loc):
 	# Create a new bucket, in a specific location
 	from boto.s3.connection import Location
-	conn.create_bucket(bucket_name, location=Location.'%s' %loc) #this line isn't working
+	conn.create_bucket(bucket_name, location='Location.%s' %loc) #this line isn't working
 
 def upload_data():
 	#upload all files in current working directory to S3 bucket
